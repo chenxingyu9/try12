@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>20191013_103806348_iOS.jpg</filename>
+	<path>C:\Users\XINGYU\Desktop\try1\data\images\train\20191013_103806348_iOS.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Two-7</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>277</xmin>
+			<ymin>132</ymin>
+			<xmax>484</xmax>
+			<ymax>346</ymax>
+		</bndbox>
+	</object>
+</annotation>

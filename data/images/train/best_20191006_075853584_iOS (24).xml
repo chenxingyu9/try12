@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>best_20191006_075853584_iOS (24).jpg</filename>
+	<path>C:\Users\XINGYU\Desktop\try1\data\images\train\best_20191006_075853584_iOS (24).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Four-9</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>227</xmin>
+			<ymin>203</ymin>
+			<xmax>486</xmax>
+			<ymax>466</ymax>
+		</bndbox>
+	</object>
+</annotation>

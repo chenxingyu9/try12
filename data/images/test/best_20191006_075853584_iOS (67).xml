@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>best_20191006_075853584_iOS (67).jpg</filename>
+	<path>C:\Users\XINGYU\Desktop\try1\data\images\train\best_20191006_075853584_iOS (67).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>C-13</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>258</xmin>
+			<ymin>89</ymin>
+			<xmax>494</xmax>
+			<ymax>328</ymax>
+		</bndbox>
+	</object>
+</annotation>
