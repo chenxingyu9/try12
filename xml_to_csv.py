@@ -26,13 +26,13 @@ def xml_to_csv(path):
     Pandas DataFrame
         The produced dataframe
     """
-    classes_names = ['UA-1','DA-2','RA-3','LA-4','Stop-5','One-6','Two-7','Three-8','Four-9','Five-10','A-11','B-12','C-13','D-14','E-15']
+    classes_names = []
     xml_list = []
     for xml_file in glob.glob(path + "/*.xml"):
         tree = ET.parse(xml_file)
         root = tree.getroot()
         for member in root.findall("object"):
-            #classes_names.append(member[0].text)
+            classes_names.append(member[0].text)
             value = (
                 root.find("filename").text,
                 int(root.find("size")[0].text),
@@ -55,8 +55,8 @@ def xml_to_csv(path):
         "ymax",
     ]
     xml_df = pd.DataFrame(xml_list, columns=column_name)
-    #classes_names = list(set(classes_names))
-    #classes_names.sort()
+    classes_names = list(set(classes_names))
+    classes_names.sort()
     return xml_df, classes_names
 
 
