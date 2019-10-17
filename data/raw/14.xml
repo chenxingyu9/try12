@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>14.jpg</filename>
+	<path>C:\Users\XINGYU\Desktop\try12\data\images\train\14.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>E-15</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>212</xmin>
+			<ymin>52</ymin>
+			<xmax>726</xmax>
+			<ymax>582</ymax>
+		</bndbox>
+	</object>
+</annotation>
