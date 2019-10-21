@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>new0 (19).jpg</filename>
+	<path>C:\Users\xingyu\Desktop\MDP\MDP\PythonApplication1\PythonApplication1\data\images\new0 (19).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>B-12</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>248</xmin>
+			<ymin>216</ymin>
+			<xmax>460</xmax>
+			<ymax>425</ymax>
+		</bndbox>
+	</object>
+</annotation>
