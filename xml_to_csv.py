@@ -52,40 +52,13 @@ def xml_to_csv(path):
 
 
 def main():
-    # Initiate argument parser
-    parser = argparse.ArgumentParser(
-        description="Sample TensorFlow XML-to-CSV converter"
-    )
-    parser.add_argument(
-        "-i",
-        "--inputDir",
-        help="Path to the folder where the input .xml files are stored",
-        type=str,
-    )
-    parser.add_argument(
-        "-o", "--outputFile", help="Name of output .csv file (including path)", type=str
-    )
-
-    parser.add_argument(
-        "-l",
-        "--labelMapDir",
-        help="Directory path to save label_map.pbtxt file is specified.",
-        type=str,
-        default="",
-    )
-
-    args = parser.parse_args()
-
-    if args.inputDir is None:
-        args.inputDir = os.getcwd()
-    if args.outputFile is None:
-        args.outputFile = args.inputDir + "/labels.csv"
-
-    assert os.path.isdir(args.inputDir)
-    os.makedirs(os.path.dirname(args.outputFile), exist_ok=True)
-    xml_df, classes_names = xml_to_csv(args.inputDir)
-    xml_df.to_csv(args.outputFile, index=None)
-    print("Successfully converted xml to csv.")
+    for folder in ['train','test']:
+        image_path = os.path.join(os.getcwd(), ('/images/' + folder))
+        xml_df = xml_to_csv(image_path)
+        
+        # saving dataframe as *.csv in 'images/' folder.
+        xml_df.to_csv(('/images/' + folder + '_labels.csv'), index=None)
+        print('Successfully converted xml to csv.')
 
 
 
